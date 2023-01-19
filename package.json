@@ -1,0 +1,42 @@
+{
+  "name": "sensible-scheduler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "npx ts-node ./src/index.ts | pino-pretty -i pid,hostname -t yyyy-mm-dd HH:MM:ss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Slashroot101/sensible-scheduler.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Slashroot101/sensible-scheduler/issues"
+  },
+  "homepage": "https://github.com/Slashroot101/sensible-scheduler#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "prisma": "^4.9.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4",
+    "pino": "^8.7.0",
+    "pino-pretty": "^9.1.1"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.7.1",
+    "@fastify/autoload": "^5.6.0",
+    "@fastify/type-provider-typebox": "^2.4.0",
+    "@sinclair/typebox": "^0.25.13",
+    "@types/node": "^18.11.13",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.10.2",
+    "nats": "^2.9.2",
+    "pino": "^8.7.0",
+    "pino-pretty": "^9.1.1",
+    "typescript": "^4.9.4"
+  }
+}
