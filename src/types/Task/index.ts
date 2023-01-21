@@ -11,3 +11,7 @@ export type TaskCreate = {
 export type TaskDelete = {
   correlationId: string;
 }
+
+export type TaskExecution = {
+  taskId: number;
+}
