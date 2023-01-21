@@ -5,4 +5,9 @@ export type TaskCreate = {
   payload: string;
   minutes: number;
   occurenceRate: OccurenceRate;
+  correlationId: string;
+}
+
+export type TaskDelete = {
+  correlationId: string;
 }

@@ -21,11 +21,12 @@ model Task {
   occurenceRate OccurenceRate
   frequencyId Int?
   frequency Frequency? @relation(fields: frequencyId, references: [id])
-  payload String
+  payload Json
   eventType String
   lastExecutionDate DateTime?
   nextScheduledExecutionDate DateTime?
   finished Boolean @default(false)
+  correlationId String @unique
 }
 
 enum OccurenceRate {
